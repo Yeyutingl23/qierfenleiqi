@@ -9,9 +9,7 @@ st.set_page_config(page_title='企鹅分类器',
 )
 #使用侧边栏实现多页面显示效果
 with st.sidebar:
-  script_dir = os.path.dirname(os.path.abspath(__file__))
-  logo_path = os.path.join(script_dir, "images", "right_logo.png")
-  st.image('rigth_logo.png',width=100)
+  st.image('images/rigth_logo.png',width=100)
   st.title('请选择页面')
   page=st.selectbox('请选择页面',['简介页面','预测分类页面'],label_visibility='collapsed')
                         
